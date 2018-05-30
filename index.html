@@ -6,20 +6,244 @@
         <!-- character encoding -->
         <meta charset="UTF-8">
         <!-- title tag -->
-        <title>Product/Company Page Project</title>
-        <!-- mobile-friendly viewport -->
+        <title>Product Promotion</title>
+        <!-- mobile viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet">
     </head>
 
     <body>
-        
-        <h1>Sup dude</h1>
-        <p>Hey there, just testting out github and netlify</p>
-        
+
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#bio" class="w3-bar-item w3-button w3-hide-small">Bio</a>
+                <a href="#songs" class="w3-bar-item w3-button w3-hide-small">Songs</a>
+                <a href="#shows" class="w3-bar-item w3-button w3-hide-small">Shows</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#bio" class="w3-bar-item w3-button">Bio</a>
+                <a href="#songs" class="w3-bar-item w3-button">Songs</a>
+                <a href="#shows" class="w3-bar-item w3-button">Shows</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+        <!-- First Parallax Image -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="bio">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><a href="https://www.livenation.com/artists/121670/logic">Logic: Buy Tickets Here!!</a></span>
+            </div>
+        </div>
+
+        <!-- Container -->
+        <div class="w3-padding-64" id="bio">
+
+            <div class="w3-row w3-container">
+                <h1>Bio</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Birth</h3>  
+                            <p>Logic was born January 22nd, 1990 and is currently 28 years old.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Family</h3>  
+                            <p>Logic is biracial and has a black dad and a white mom. He raps about them in some of his songs. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Rise to Fame</h3>  
+                            <p>Logic started out his career with Visionary Music Group and started to release mixtapes in around 2010. After awhile, his album Under Pressure, blew up on the Billboart Hot 100 and then his career sparked from there.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="bio">
+        </div>
+
+
+
+        <section class="w3-padding-64" id="songs">
+
+            <div class="w3-row w3-container">
+                <h1>Songs</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/logic.jpg" class="w3-image">
+                        <p>Logic posing at the VMA awards.</p>
+                    </div>
+                </div>
+                <div class="w3-half">
+
+                    <button onclick="accordion('1-800-273-8255')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        1-800-273-8255</button>
+
+                    <div id="1-800-273-8255" class="w3-container w3-hide">
+                        <p>This is one of Logics most famous songs. It provides a strong mesage of suicide prevention among people worldwide and this song has improved Logics image of how people look at him. </p>
+                    </div>
+
+                    <button onclick="accordion('44-more')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        44 More</button>
+
+                    <div id="44-more" class="w3-container w3-hide">
+                        <p>This song was released as a single before putting it on his album, Bobby Terantino II. It has since recieved millions of views and there is even a video of Logic recording it. It shows the process of how he records his songs.</p>
+                    </div>
+
+                    <button onclick="accordion('young-jesus')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Young Jesus</button>
+
+                    <div id="young-jesus" class="w3-container w3-hide">
+                        <p>This song blew up and made Logic even more known. At the start it talks about how Logic has a 90's style rap but with a new flow.</p>
+                    </div>
+
+                    <button onclick="accordion('44-bars')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        44 Bars</button>
+
+                    <div id="44-bars" class="w3-container w3-hide">
+                        <p>Logic spits precisely 44 bars detailing his struggles, pain, and determination to keep working hard for his fans and passion. The track notably samples Barrington Levy’s “The Vibes Is Right.”</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Second Parallax Image -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <div id="shows" class="tab">
+            <h1>Shows</h1>
+        </div>
+
+        <div class="w3-half">
+
+            <button onclick="accordion('MA')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                MA</button>
+
+            <div id="MA" class="w3-container w3-hide">
+                <p>Logic has an upcoming show in Mansfield, Massachusetts at the Xfinity Center. Its on Friday, June 8th at 7:00 P.M.</p>
+            </div>
+
+            <button onclick="accordion('ME')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                ME</button>
+
+            <div id="ME" class="w3-container w3-hide">
+                <p>Another show coming up soon is in Bangor, Maine at Darling's Waterfront Pavilion. Its on Saturday, June 9th at 7:00 P.M.</p>
+            </div>
+
+            <button onclick="accordion('NJ')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                NJ</button>
+
+            <div id="NJ" class="w3-container w3-hide">
+                <p>One last show that he will be performing at is in Camden, New Jersey at BB and T Pavilion. Its on Wednesday June 13th at 7:00P.M.</p>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <div id="ma" class="tab" style="display:none">
+            <h2>MA</h2>
+            <p>Logic has shows coming soon to Massachusetts.</p> 
+        </div>
+
+        <div id="me" class="tab" style="display:none">
+            <h2>ME</h2>
+            <p>Logic has shows soon coming to Maine</p>
+        </div>
+
+        <div id="nj" class="tab" style="display:none">
+            <h2>NJ</h2>
+            <p>Logic has shows soon coming to New Jersey</p>
+        </div>
+
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container w3-half">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/logic9.jpg">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/logic12.jpeg">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/logic11.jpg">
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- Javascript -->
+
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/slideshow.js"></script>
     </body>
 
 </html>
